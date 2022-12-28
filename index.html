@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Decodificador | Alura</title>
+</head>
+<body>
+    <header>
+        <span><img src="./assets/imagens/alura.png"></span>
+        <h1>Encriptador Alura</h1>
+    </header>
+
+        <main>
+           <div class="mainButtons">
+            <button id="botaoModalEncriptadorNormal" class="botaoModal">Encriptador Alura</button>
+            <button id="botaoModalEncriptadorNormal" class="botaoModal">Encriptador 2</button>
+            <button id="botaoModalEncriptadorNormal" class="botaoModal">Encriptador 3</button>
+            <button id="botaoModalEncriptadorNormal" class="botaoModal">Encriptador 4</button>
+           </div>
+        </main>
+
+        <footer>
+            <div class="icons">
+             <a href="https://github.com/ViniJRamos" target="_blank">
+                <img src="./assets/imagens/25231.png">
+             </a>
+             <a href="https://github.com/ViniJRamos" target="_blank">
+                <img src="./assets/imagens/link.png">
+             </a>
+               
+            </div>
+        </footer>
+
+        <div id="modalEncriptadorNormal" class="modal">
+            <div class="modal-content">
+                <header class="modalHeader"><strong>Encriptador Alura</strong>
+                    <span class="fecharModal"><strong>✖</strong></span>
+                </header>
+                
+               <div class="encriptador">
+                    <div class="entrada">
+                        <textarea style="resize: none; height: 400px;width: 100%; max-width: 500px;"  id="textoParaConversao" placeholder="Digite aqui o texto para criptografar ou descriptografar"></textarea>
+                        <div class="divBotao">
+                            <button class="botao" onclick="criptografar()">Criptografar</button>
+                            <button class="botao botaoDescriptografar" onclick="descriptografar()">Descriptografar</button>
+                        </div>
+                    </div>
+                   
+
+                    <div class="saida">
+                        <textarea style="resize: none; height: 400px; width: 100%; max-width: 500px; pointer-events: none;" id="textoFinal" placeholder="Texto final, seja ele criptogrado ou descriptografado."></textarea>
+                        <div class="divBotao">
+                            <button class="botao" onclick="copiarTexto()">Copiar texto</button>
+                            <button class="botao" onclick="limparTexto()">Limpar texto</button>
+                        </div>
+                    </div>
+               </div>
+
+            </div>
+        </div>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
